@@ -31,16 +31,11 @@ nav .search_wr {
 }
 
 nav .search_wr i {
-  width: 10px;
-  height: 10px;
   position: absolute;
   top: 50%;
   left: 11px;
   transform: translateY(-50%);
-  background: url(../img/icons_sprit) no-repeat;
-  background-size: 85px;
-  background-position: -32px -23px;
-  text-indent: -9999px;
+  font-size: 1rem;
 }
 
 nav .search_wr input {
@@ -61,6 +56,8 @@ nav .icons {
 }
 
 nav .icons li button {
+  width: 22px;
+  height: 22px;
   margin: 0 0 0 22px;
 }
 
@@ -187,6 +184,7 @@ strong.user_id {
 
 .feeds .feeds_content button.btn_bookmark {
   margin: 8px 0 0;
+  float: right;
 }
 
 .feeds .feeds_content .feeds_txt .user_id {
@@ -370,64 +368,6 @@ strong.user_id {
   background-color: var(--font-gray);
 }
 
-/* buttons */
-
-.btn_com {
-  width: 24px;
-  height: 24px;
-  background: url(../img/icons_sprit) no-repeat;
-  background-size: 200px;
-  text-indent: -9999px;
-}
-
-.btn_explore {
-  background-position: -5px -54px;
-}
-
-.btn_heart {
-  background-position: -5px -6px;
-}
-
-.btn_heart.on {
-  background-position: -42px -6px;
-}
-
-.btn_small {
-  margin: 0;
-  background-position: -1px -3px;
-  background-size: 90px;
-}
-
-.btn_small.on {
-  background-position: -18px -3px;
-  background-size: 90px;
-}
-
-.btn_cmt {
-  background-position: -151px -6px;
-}
-
-.btn_dm {
-  background-position: -78px -4px;
-}
-
-.btn_mypage {
-  background-position: -5px -101px;
-}
-
-.btn_more {
-  position: absolute;
-  top: 50%;
-  right: 16px;
-  transform: translateY(-50%);
-  background-position: -112px -6px;
-}
-
-.btn_bookmark {
-  float: right;
-  background-position: -42px -53px;
-}
-
 .btn_follow {
   position: absolute;
   top: 50%;
@@ -486,6 +426,12 @@ strong.user_id {
 
   .feeds_right,
   .footer {
+    display: none;
+  }
+}
+
+@media all and (max-width: 768px) {
+  nav .search_wr {
     display: none;
   }
 }
