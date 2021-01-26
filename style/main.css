@@ -81,6 +81,7 @@ main {
 }
 
 .story ul {
+  display: flex;
   overflow-x: auto;
   overflow-y: hidden;
 }
@@ -89,7 +90,6 @@ main {
   width: 80px;
   height: 88px;
   padding: 0 4px;
-  display: inline-block;
   position: relative;
 }
 
@@ -100,7 +100,7 @@ main {
   border: 0;
 }
 
-.story .user_profile canvas.on {
+.story .user_profile i.on {
   width: 64px;
   height: 64px;
   position: absolute;
@@ -473,7 +473,7 @@ strong.user_id {
 
 @media all and (max-width: 1000px) {
   nav section {
-    padding: 0 20px
+    padding: 0 20px;
   }
 
   .feeds {
@@ -481,10 +481,11 @@ strong.user_id {
   }
 
   .story {
-    margin: 0 auto 24px
+    margin: 0 auto 24px;
   }
 
-  .feeds_right, .footer {
+  .feeds_right,
+  .footer {
     display: none;
   }
 }
