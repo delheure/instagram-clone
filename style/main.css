@@ -293,9 +293,9 @@ strong.user_id {
 .feeds_right {
   width: 293px;
   padding: 0 16px;
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: fixed;
+  top: 84px;
+  right: 252px;
   background-color: var(--bg-color);
 }
 
@@ -335,9 +335,9 @@ strong.user_id {
 .footer {
   width: 293px;
   padding: 0 16px;
-  position: absolute;
-  top: 302px;
-  right: 0;
+  position: fixed;
+  top: 386px;
+  right: 252px;
   color: var(--font-gray);
   font-size: 1.1rem;
   line-height: 13px;
