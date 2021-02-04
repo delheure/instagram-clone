@@ -35,6 +35,7 @@ nav .search_wr i {
   top: 50%;
   left: 11px;
   transform: translateY(-50%);
+  color: var(--sub-color);
   font-size: 1rem;
 }
 
@@ -75,6 +76,7 @@ main {
   overflow: hidden;
   background-color: #fff;
   border: var(--border-gray);
+  border-radius: 3px;
 }
 
 .story ul {
@@ -146,6 +148,10 @@ main {
 .feeds {
   max-width: 614px;
   margin: 0 28px 0 0;
+}
+
+.feeds article {
+  margin: 0 0 60px 0;
   background-color: #fff;
   border: var(--border-gray);
   border-radius: 3px;
@@ -245,15 +251,26 @@ strong.user_id {
   overflow: scroll;
 }
 
-.feeds .feeds_content .cmt_list p {
-  width: 80%;
-}
-
 .feeds .feeds_content .cmt_list li {
   position: relative;
 }
 
-.feeds .feeds_content .cmt_list li .btn_heart {
+.feeds .feeds_content .cmt_list li p span{
+  margin: 0 0 0 4px;
+}
+
+.feeds .feeds_content .cmt_list li .btn_del {
+  width: 12px;
+  height: 12px;
+  margin: 0 0;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+.feeds .feeds_content .cmt_list li .btn_like {
   width: 12px;
   height: 12px;
   margin: 0 0;
